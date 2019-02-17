@@ -15,7 +15,7 @@ script:
 # build image
 - docker build -t andreygo/docker-arm .
 # test image
-- docker run test/docker-arm uname -a
+- docker run andreygo/docker-arm uname -a
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ]; then
